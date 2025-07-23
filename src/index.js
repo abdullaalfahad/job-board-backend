@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import cors from 'cors';
 import jobRoutes from './modules/job/job.routes.js';
+import authRoutes from './modules/auth/auth.routes.js';
 
 dotenv.config();
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => res.send('API is running'));
 app.use('/jobs', jobRoutes);
+app.use('/auth', authRoutes);
 
 const PORT = process.env.PORT || 5000;
 
