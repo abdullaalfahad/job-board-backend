@@ -10,7 +10,8 @@
     "prepare": "husky install",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "test": "cross-env NODE_ENV=test jest"
   },
   "keywords": [],
   "author": "",
@@ -25,13 +26,19 @@
     "mongoose": "^8.16.4"
   },
   "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
     "@eslint/js": "^9.31.0",
+    "babel-jest": "^30.0.5",
+    "cross-env": "^7.0.3",
     "eslint": "^9.31.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.3",
     "globals": "^16.3.0",
     "husky": "^9.1.7",
+    "jest": "^30.0.5",
     "nodemon": "^3.1.10",
-    "prettier": "^3.6.2"
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4"
   }
 }
