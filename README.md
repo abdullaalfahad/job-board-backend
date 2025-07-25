@@ -16,6 +16,8 @@ Companies (admins) can post jobs, and users can browse and apply for them.
 - Docker & Docker Compose
 - ESLint + Prettier + Husky
 
+[🔗 Live Backend on Render](https://job-board-backend-liyl.onrender.com/)
+
 ---
 
 ## 🚀 Getting Started
@@ -52,6 +54,15 @@ import bcrypt from 'bcryptjs';
 console.log(bcrypt.hashSync('admin123', 10));
 ```
 
+### 🔐 Admin Credentials
+
+```json
+{
+  "username": "admin",
+  "password": "admin123"
+}
+```
+
 ### 4. Run the App (Locally)
 
 ```bash
@@ -76,6 +87,8 @@ docker run --env-file .env -p 5000:5000 job-board-backend
 ```bash
 docker-compose up --build
 ```
+
+---
 
 ---
 
